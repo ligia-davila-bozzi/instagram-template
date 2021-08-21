@@ -32,7 +32,7 @@ const LogoDesktop = styled.div`
         margin: 0 10px;
     }
     @media (max-width: 614px) {
-        display: none;
+        display: none !important;
     }
 `;
 

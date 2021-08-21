@@ -25,8 +25,8 @@ const IconesDesktop = styled.div`
 `;
 
 const IconesMobile = styled.div`
-    display: none;
+    display: none !important;
     @media (max-width: 614px) {
-        display: flex
+        display: flex !important;
     }
 `;

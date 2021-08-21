@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import Logo from "./Logo";
 import Pesquisa from "./Pesquisa";
-import Icones from "./Logo";
+import Icones from "./Icones.js";
 
 export default function Navbar() {
     return (

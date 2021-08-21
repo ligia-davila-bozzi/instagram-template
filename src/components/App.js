@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
-import Navbar from "./Navbar"
+import Navbar from "./Navbar";
+import Corpo from "./Corpo";
 
 export default function App() {
     return (
         <Body>
             <Navbar />
+            <Corpo />
         </Body>
     )
 }
