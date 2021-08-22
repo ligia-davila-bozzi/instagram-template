@@ -1,98 +1,69 @@
+import styled from 'styled-components';
+
 import Stories from "./Stories";
 import Posts from "./Posts";
+import UsuarioLogado from "./sidebar_components/UsuarioLogado";
+import Sugestoes from "./Sugestoes";
+
+import catanacomicsImg from './assets/img/catanacomics.svg';
 
 export default function Corpo() {
+  const usuarioLogado = {
+    nickname: "catanacomics", username: "Catana", imgPath: catanacomicsImg
+  }
     return (
-        <div class="corpo">
-        <div class="esquerda">
+        <CorpoBox>
+          <Esquerda>
             <Stories />
             <Posts />
-        </div>
+          </Esquerda>
 
-        <div class="sidebar">
-          <div class="usuario">
-            <img alt="" src="assets/img/catanacomics.svg" />
-            <div class="texto">
-              <strong>catanacomics</strong>
-              Catana
-            </div>
-          </div>
-
-          <div class="sugestoes">
-            <div class="titulo">
-              Sugestões para você
-              <div>Ver tudo</div>
-            </div>
-
-            <div class="sugestao">
-              <div class="usuario">
-                <img alt="" src="assets/img/bad.vibes.memes.svg" />
-                <div class="texto">
-                  <div class="nome">bad.vibes.memes</div>
-                  <div class="razao">Segue você</div>
-                </div>
-              </div>
-
-              <div class="seguir">Seguir</div>
-            </div>
-
-            <div class="sugestao">
-              <div class="usuario">
-                <img alt="" src="assets/img/chibirdart.svg" />
-                <div class="texto">
-                  <div class="nome">chibirdart</div>
-                  <div class="razao">Segue você</div>
-                </div>
-              </div>
-
-              <div class="seguir">Seguir</div>
-            </div>
-
-            <div class="sugestao">
-              <div class="usuario">
-                <img alt="" src="assets/img/razoesparaacreditar.svg" />
-                <div class="texto">
-                  <div class="nome">razoesparaacreditar</div>
-                  <div class="razao">Novo no Instagram</div>
-                </div>
-              </div>
-
-              <div class="seguir">Seguir</div>
-            </div>
-
-            <div class="sugestao">
-              <div class="usuario">
-                <img alt="" src="assets/img/adorable_animals.svg" />
-                <div class="texto">
-                  <div class="nome">adorable_animals</div>
-                  <div class="razao">Segue você</div>
-                </div>
-              </div>
-
-              <div class="seguir">Seguir</div>
-            </div>
-
-            <div class="sugestao">
-              <div class="usuario">
-                <img alt="" src="assets/img/smallcutecats.svg" />
-                <div class="texto">
-                  <div class="nome">smallcutecats</div>
-                  <div class="razao">Segue você</div>
-                </div>
-              </div>
-
-              <div class="seguir">Seguir</div>
-            </div>
-          </div>
-
-          <div class="links">
-            Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
-          </div>
-
-          <div class="copyright">
-            © 2021 INSTAGRAM DO FACEBOOK
-          </div>
-        </div>
-      </div>
+          <Sidebar>
+            <UsuarioLogado 
+            nickname={usuarioLogado.nickname} 
+            username={usuarioLogado.username} 
+            imgPath={usuarioLogado.imgPath} 
+            />
+            <Sugestoes />
+            <Links>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma</Links>
+            <Copyright>© 2021 INSTAGRAM DO FACEBOOK</Copyright>
+          </Sidebar>
+        </CorpoBox>
     )
 }
+
+const CorpoBox = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 935px;
+    margin: 0 auto;
+    margin-top: 88px;
+`;
+
+const Esquerda = styled.div`
+    width: 100%;
+    max-width: 614px;
+`;
+
+const Sidebar = styled.div`
+    width: 293px;
+    padding-top: 24px;
+    position: sticky;
+    top: 88px;
+    @media (max-width: 935px) {
+      display: none;
+    }
+`;
+
+const Links = styled.div`
+    font-size: 11px;
+    color: #C7C7C7;
+    margin-top: 40px;
+    cursor: pointer;
+`;
+
+const Copyright = styled.div`
+    font-size: 11px;
+    color: #C7C7C7;
+    margin-top: 18px;
+`;

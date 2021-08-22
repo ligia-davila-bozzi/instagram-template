@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import Logo from "./Logo";
-import Pesquisa from "./Pesquisa";
-import Icones from "./Icones.js";
+import Logo from "./navbar_components/Logo.js";
+import Pesquisa from "./navbar_components/Pesquisa.js";
+import Icones from "./navbar_components/Icones.js";
 
 export default function Navbar() {
     return (

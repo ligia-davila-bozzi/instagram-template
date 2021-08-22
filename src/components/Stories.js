@@ -1,29 +1,30 @@
 import styled from 'styled-components';
 
-import story9gag from './assets/img/9gag.svg';
-import storyMeowed from './assets/img/meowed.svg';
-import storyBarked from './assets/img/barked.svg';
-import storyNathanwpylestrangeplanet from './assets/img/nathanwpylestrangeplanet.svg';
-import storyWawacomics from './assets/img/wawawicomics.svg';
-import storyRespondeai from './assets/img/respondeai.svg';
-import storyFilomoderna from './assets/img/filomoderna.svg';
-import storyMemeriagourmet from './assets/img/memeriagourmet.svg';
+import storyBackgroundImg from './assets/img/story-circle.svg';
+import nineGagImg from './assets/img/9gag.svg';
+import meowedImg from './assets/img/meowed.svg';
+import barkedImg from './assets/img/barked.svg';
+import nathanwpylestrangeplanetImg from './assets/img/nathanwpylestrangeplanet.svg';
+import wawacomicsImg from './assets/img/wawawicomics.svg';
+import respondeaiImg from './assets/img/respondeai.svg';
+import filomodernaImg from './assets/img/filomoderna.svg';
+import memeriagourmetImg from './assets/img/memeriagourmet.svg';
 
 export default function Stories() {
     const stories = [
-        { img: story9gag, user: "9gag" },
-        { img: storyMeowed, user: "meowed" },
-        { img: storyBarked, user: "barked" },
-        { img: storyNathanwpylestrangeplanet, user: "nathanwpylestrangeplanet" },
-        { img: storyWawacomics, user: "wawawicomics" },
-        { img: storyRespondeai, user: "respondeai" },
-        { img: storyFilomoderna, user: "filomoderna" },
-        { img: storyMemeriagourmet, user: "memeriagourmet" }
+        { img: nineGagImg, user: "9gag" },
+        { img: meowedImg, user: "meowed" },
+        { img: barkedImg, user: "barked" },
+        { img: nathanwpylestrangeplanetImg, user: "nathanwpylestrangeplanet" },
+        { img: wawacomicsImg, user: "wawawicomics" },
+        { img: respondeaiImg, user: "respondeai" },
+        { img: filomodernaImg, user: "filomoderna" },
+        { img: memeriagourmetImg, user: "memeriagourmet" }
     ]
     return (
         <StoriesBox>
-            {stories.map(s => (
-                <Story>
+            {stories.map((s, index) => (
+                <Story key={index}>
                     <Imagem><img alt ="" src={s.img} /></Imagem>
                     <Usuario>{s.user}</Usuario>
                 </Story>
@@ -58,7 +59,7 @@ const Setinha = styled.div`
     top: 45px;
     height: 32px;
     width: 32px;
-    color: #c6c6c6;
+    color: #FFF;
     font-size: 28px;
     cursor: pointer;
 `;
@@ -67,7 +68,7 @@ const Story = styled.div`
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 14px 0;
     font-size: 12px;
@@ -81,7 +82,7 @@ const Imagem = styled.div`
     align-items: center;
     height: 66px;
     width: 66px;
-    background-image: url('../assets/img/story-circle.svg');
+    background-image: url(${storyBackgroundImg});
     img {
         width: 56px;
         height: 56px;

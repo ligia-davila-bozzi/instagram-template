@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
+import logo from "../assets/img/logo.png";
+
 export default function Logo() {
     return (
         <>
         <LogoDesktop>
             <ion-icon name="logo-instagram"></ion-icon>
             <div className="separador"></div>
-            <img alt="" src="assets/img/logo.png" />
+            <img alt="" src={logo} />
         </LogoDesktop>
 
         <LogoMobile>
@@ -14,7 +16,7 @@ export default function Logo() {
         </LogoMobile>
 
         <InstagramMobile>
-            <img alt="" src="assets/img/logo.png" />
+            <img alt="" src={logo} />
         </InstagramMobile>
         </>
     )
