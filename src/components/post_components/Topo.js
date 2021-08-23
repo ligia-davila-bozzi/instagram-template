@@ -19,6 +19,7 @@ const Topo = styled.div`
     padding: 13px 16px;
     font-size: 14px;
     font-weight: 500;
+    box-sizing: border-box;
     img {
         width: 32px;
         height: 32px;
@@ -35,4 +36,5 @@ const Usuario = styled.div`
     display: flex;
     align-items: center;
     cursor: pointer;
+    box-sizing: border-box;
 `;

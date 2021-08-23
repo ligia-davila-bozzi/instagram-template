@@ -46,6 +46,7 @@ const StoriesBox = styled.div`
     padding: 0 18px;
     overflow: hidden;
     position: relative;
+    box-sizing: border-box;
     @media (max-width: 614px) {
         background-color: transparent;
         border: none;
@@ -62,6 +63,10 @@ const Setinha = styled.div`
     color: #FFF;
     font-size: 28px;
     cursor: pointer;
+    box-sizing: border-box;
+    @media (max-width: 614px) {
+        display: none;
+    }
 `;
 
 const Story = styled.div`
@@ -74,6 +79,7 @@ const Story = styled.div`
     font-size: 12px;
     cursor: pointer;
     margin-right: 10px;
+    box-sizing: border-box;
 `;
   
 const Imagem = styled.div`
@@ -83,6 +89,7 @@ const Imagem = styled.div`
     height: 66px;
     width: 66px;
     background-image: url(${storyBackgroundImg});
+    box-sizing: border-box;
     img {
         width: 56px;
         height: 56px;
@@ -96,4 +103,6 @@ const Usuario = styled.div`
     text-overflow: ellipsis;
     text-align: center;
     height: 14px;
+    box-sizing: border-box;
+    margin-top: 4px;
 `;

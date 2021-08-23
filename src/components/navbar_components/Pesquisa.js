@@ -9,9 +9,10 @@ export default function Pesquisa() {
 }
 
 const BarraDePesquisa = styled.div`
+    box-sizing: border-box;
     input {
-        width: 215px;
-        height: 28px;
+        width: 210px;
+        height: 24px;
         border-radius: 3px;
         background-color: #FAFAFA;
         border: 1px solid #DBDBDB;
@@ -19,6 +20,6 @@ const BarraDePesquisa = styled.div`
         text-align: center;
     }
     @media (max-width: 614px) {
-        display: none;
+        display: none !important;
     }
 `;

@@ -37,6 +37,7 @@ const Post = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 18px;
+    box-sizing: border-box;
     ion-icon, strong {
         cursor: pointer;
     }

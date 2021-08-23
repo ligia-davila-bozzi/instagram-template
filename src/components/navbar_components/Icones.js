@@ -18,14 +18,18 @@ export default function Icones() {
 }
 
 const IconesDesktop = styled.div`
-    margin: 0 5px;
+    box-sizing: border-box;
+    ion-icon{ 
+        margin: 0 5px;
+    }
     @media (max-width: 614px) {
-        display: none;
+        display: none !important;
     }
 `;
 
 const IconesMobile = styled.div`
     display: none !important;
+    box-sizing: border-box;
     @media (max-width: 614px) {
         display: flex !important;
     }

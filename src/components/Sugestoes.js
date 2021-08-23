@@ -37,6 +37,7 @@ export default function Sugestoes() {
 }
 
 const SugestoesBox = styled.div`
+    box-sizing: border-box;
     img {
         width: 32px;
         height: 32px;
@@ -52,6 +53,7 @@ const Titulo = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 20px 0 14px;
+    box-sizing: border-box;
 `;
 
 const Sugestao = styled.div`
@@ -61,4 +63,5 @@ const Sugestao = styled.div`
     cursor: pointer;
     height: 31px;
     margin-bottom: 16px;
+    box-sizing: border-box;
 `;

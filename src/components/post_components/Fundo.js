@@ -21,6 +21,7 @@ export default function PostFundo(props) {
 }
 
 const Fundo = styled.div`
+    box-sizing: border-box;
     img {
         cursor: pointer;
     }
@@ -42,6 +43,7 @@ const Curtidas = styled.div`
     align-items: center;
     padding: 0 16px 13px;
     font-weight: 300;
+    box-sizing: border-box;
     img {
         width: 20px;
         height: 20px;

@@ -2,17 +2,20 @@ import styled from 'styled-components';
 
 import Navbar from "./Navbar";
 import Corpo from "./Corpo";
+import FundoMobile from "./FundoMobile";
 
 export default function App() {
     return (
         <Body>
             <Navbar />
             <Corpo />
+            <FundoMobile />
         </Body>
     )
 }
 
 const Body = styled.div`
+    box-sizing: border-box;
     background-color: #FAFAFA;
     margin: 54px 0 0;
     font-family: 'Roboto', sans-serif;

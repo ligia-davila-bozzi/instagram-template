@@ -28,6 +28,7 @@ const Bar = styled.div`
     top: 0;
     left: 0;
     z-index: 2;
+    box-sizing: border-box;
     ion-icon, img {
         cursor: pointer;
     }
@@ -40,6 +41,7 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    box-sizing: border-box;
     > * {
         display: flex;
         align-items: center;

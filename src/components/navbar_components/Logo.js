@@ -23,6 +23,7 @@ export default function Logo() {
 }
 
 const LogoDesktop = styled.div`
+    box-sizing: border-box;
     img {
         position: relative;
         top: 3px;
@@ -40,6 +41,7 @@ const LogoDesktop = styled.div`
 
 const LogoMobile = styled.div`
     display: none !important;
+    box-sizing: border-box;
     @media (max-width: 614px) {
         display: flex !important;
     }
@@ -47,6 +49,7 @@ const LogoMobile = styled.div`
 
 const InstagramMobile = styled.div`
     display: none !important;
+    box-sizing: border-box;
     @media (max-width: 614px) {
         display: flex !important;
         position: relative;

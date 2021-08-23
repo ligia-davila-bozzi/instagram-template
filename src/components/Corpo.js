@@ -38,11 +38,20 @@ const CorpoBox = styled.div`
     width: 935px;
     margin: 0 auto;
     margin-top: 88px;
+    box-sizing: border-box;
+    @media (max-width: 935px) {
+        justify-content: center;
+        width: 100%;
+    }
+    @media (max-width: 614px) {
+        margin-top: 0;
+    }
 `;
 
 const Esquerda = styled.div`
     width: 100%;
     max-width: 614px;
+    box-sizing: border-box;
 `;
 
 const Sidebar = styled.div`
@@ -50,6 +59,7 @@ const Sidebar = styled.div`
     padding-top: 24px;
     position: sticky;
     top: 88px;
+    box-sizing: border-box;
     @media (max-width: 935px) {
       display: none;
     }
@@ -60,10 +70,12 @@ const Links = styled.div`
     color: #C7C7C7;
     margin-top: 40px;
     cursor: pointer;
+    box-sizing: border-box;
 `;
 
 const Copyright = styled.div`
     font-size: 11px;
     color: #C7C7C7;
     margin-top: 18px;
+    box-sizing: border-box;
 `;
