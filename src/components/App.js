@@ -17,7 +17,7 @@ export default function App() {
 const Body = styled.div`
     box-sizing: border-box;
     background-color: #FAFAFA;
-    margin: 54px 0 0;
+    margin: 58px 0 0;
     font-family: 'Roboto', sans-serif;
     color: #262626;
     font-weight: 400;

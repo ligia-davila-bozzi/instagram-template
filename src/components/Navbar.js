@@ -20,7 +20,7 @@ const Bar = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 54px;
+    height: 58px;
     border-bottom: 1px solid #DBDBDB;
     font-size: 22px;
     background-color: #FFF;
@@ -29,6 +29,7 @@ const Bar = styled.div`
     left: 0;
     z-index: 2;
     box-sizing: border-box;
+    box-shadow: 0 0 8px rgb(214, 214, 214);
     ion-icon, img {
         cursor: pointer;
     }

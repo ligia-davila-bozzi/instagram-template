@@ -24,7 +24,7 @@ const FundoMobileBox = styled.div`
         font-size: 24px;
         background-color: #FFF;
         border-top: 1px solid #DBDBDB;
-        height: 54px;
+        height: 58px;
         width: 100%;
         position: fixed;
         bottom: 0;

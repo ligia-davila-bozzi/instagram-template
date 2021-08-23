@@ -22,6 +22,10 @@ export default function PostFundo(props) {
 
 const Fundo = styled.div`
     box-sizing: border-box;
+    background: #FFF;
+    border: 1px solid #DBDBDB;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     img {
         cursor: pointer;
     }

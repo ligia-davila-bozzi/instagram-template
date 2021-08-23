@@ -46,14 +46,10 @@ export default function Posts() {
 }
 
 const PostsBox = styled.div`
-    :last-child {
-        margin-bottom: 100px;
-    }
+    
 `;
 
 const Post = styled.div`
-    border-radius: 3px;
-    border: 1px solid #DBDBDB;
     display: flex;
     flex-direction: column;
     margin-top: 18px;
@@ -62,11 +58,14 @@ const Post = styled.div`
         cursor: pointer;
     }
     .conteudo {
+        display: flex;
+        justify-content: center;
         img {
-            width: 100%;
+            width: 99.5%;
+            height: 100%;
         }
     }
-    ::last-child {
+    :last-child {
         margin-bottom: 18px;
     }
     @media (max-width: 614px) {
@@ -74,10 +73,10 @@ const Post = styled.div`
         border-left: none;
         border-right: none;
         width: 100%;
-        ::last-child {
+        :last-child {
             margin-bottom: 72px;
         }
-        ::first-child {
+        :first-child {
             margin-top: 0;
         }
     }

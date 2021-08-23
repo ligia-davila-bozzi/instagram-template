@@ -43,6 +43,7 @@ const StoriesBox = styled.div`
     height: 118px;
     border-radius: 3px;
     border: 1px solid #DBDBDB;
+    background: #FFF;
     padding: 0 18px;
     overflow: hidden;
     position: relative;

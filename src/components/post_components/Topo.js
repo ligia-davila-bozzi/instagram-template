@@ -20,6 +20,10 @@ const Topo = styled.div`
     font-size: 14px;
     font-weight: 500;
     box-sizing: border-box;
+    background: #FFF;
+    border: 1px solid #DBDBDB;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     img {
         width: 32px;
         height: 32px;
