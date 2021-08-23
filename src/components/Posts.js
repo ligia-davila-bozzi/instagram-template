@@ -4,22 +4,36 @@ import PostTopo from "./post_components/Topo.js";
 import PostFundo from "./post_components/Fundo.js";
 
 // usuariosImgs
-import meowedImg from './assets/img/meowed.svg';
-import barkedImg from './assets/img/barked.svg';
+import supergiant from './assets/imgs/supergiant.jpg';
+import playdead from './assets/imgs/playdead.jpg';
+import oneshot from './assets/imgs/oneshot.jpg';
+import compulsion from './assets/imgs/compulsion-games.jpg';
+import reLogic from './assets/imgs/re-logic.png';
+import teamCherry from './assets/imgs/team-cherry.png';
 // conteudosImgs
-import gatoImg from './assets/img/gato-telefone.svg';
-import dogImg from './assets/img/dog.svg';
+import bastion from './assets/imgs/bastion-cover3.jpg';
+import robots from './assets/imgs/robots-post.gif';
+import inside from './assets/imgs/inside-cover.jpg';
+import oneshotPost from './assets/imgs/oneshot-post.png';
+import weHappyFew from './assets/imgs/we-happy-few-post.jpg';
+import terraria from './assets/imgs/terraria-post.gif';
+import hollowKnight from './assets/imgs/hollow-knight-cover4.jpg';
 // curtidasImgs
-import respondeaiImg from './assets/img/respondeai.svg';
-import adorableAnimalsImg from './assets/img/adorable_animals.svg';
+import user from './assets/imgs/user.png';
+import bob from './assets/imgs/gamer-icon.jpg';
 
 export default function Posts() {
     const posts = [
-        { userImg: meowedImg, username: "meowed", conteudo: gatoImg, curtidaImg: respondeaiImg},
-        { userImg: barkedImg, username: "barked", conteudo: dogImg, curtidaImg: adorableAnimalsImg}
+        { userImg: supergiant, username:"supergiant", conteudo: bastion, curtidaImg: bob},
+        { userImg: user, username:"indie-games", conteudo: robots, curtidaImg: bob},
+        { userImg: playdead, username:"playdead", conteudo: inside, curtidaImg: bob},
+        { userImg: oneshot, username:"onsehot", conteudo: oneshotPost, curtidaImg: bob},
+        { userImg: compulsion, username:"compulsion", conteudo: weHappyFew, curtidaImg: bob},
+        { userImg: reLogic, username:"re-logic", conteudo: terraria, curtidaImg: bob},
+        { userImg: teamCherry, username:"indie-games", conteudo: hollowKnight, curtidaImg: bob}
     ]
     return (
-        <div className="posts">
+        <PostsBox>
             {posts.map((p, index) => (
                 <Post key={index}>
                     <PostTopo userImg={p.userImg} username={p.username} />
@@ -27,9 +41,15 @@ export default function Posts() {
                     <PostFundo curtidaImg={p.curtidaImg} />
                 </Post>
             ))}
-        </div>
+        </PostsBox>
     )
 }
+
+const PostsBox = styled.div`
+    :last-child {
+        margin-bottom: 100px;
+    }
+`;
 
 const Post = styled.div`
     border-radius: 3px;

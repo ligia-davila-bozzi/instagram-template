@@ -5,31 +5,31 @@ import Posts from "./Posts";
 import UsuarioLogado from "./sidebar_components/UsuarioLogado";
 import Sugestoes from "./Sugestoes";
 
-import catanacomicsImg from './assets/img/catanacomics.svg';
+import user from './assets/imgs/user.png';
 
 export default function Corpo() {
   const usuarioLogado = {
-    nickname: "catanacomics", username: "Catana", imgPath: catanacomicsImg
+    nickname: "indie-games", username: "Independent Games Lover", imgPath: user
   }
-    return (
-        <CorpoBox>
-          <Esquerda>
-            <Stories />
-            <Posts />
-          </Esquerda>
+  return (
+    <CorpoBox>
+      <Esquerda>
+        <Stories />
+        <Posts />
+      </Esquerda>
 
-          <Sidebar>
-            <UsuarioLogado 
-            nickname={usuarioLogado.nickname} 
-            username={usuarioLogado.username} 
-            imgPath={usuarioLogado.imgPath} 
-            />
-            <Sugestoes />
-            <Links>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma</Links>
-            <Copyright>© 2021 INSTAGRAM DO FACEBOOK</Copyright>
-          </Sidebar>
-        </CorpoBox>
-    )
+      <Sidebar>
+        <UsuarioLogado
+          nickname={usuarioLogado.nickname}
+          username={usuarioLogado.username}
+          imgPath={usuarioLogado.imgPath}
+        />
+        <Sugestoes />
+        <Links>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma</Links>
+        <Copyright>© 2021 INSTAGRAM DO FACEBOOK</Copyright>
+      </Sidebar>
+    </CorpoBox>
+  )
 }
 
 const CorpoBox = styled.div`

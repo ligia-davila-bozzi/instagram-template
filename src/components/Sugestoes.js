@@ -2,19 +2,19 @@ import styled from "styled-components";
 
 import UsuarioSugerido from "./sidebar_components/UsuarioSugerido";
 
-import badVibesMemesImg from './assets/img/bad.vibes.memes.svg';
-import chibirdartImg from './assets/img/chibirdart.svg';
-import razoesParaAcreditarImg from './assets/img/razoesparaacreditar.svg';
-import adorableAnimalsImg from './assets/img/adorable_animals.svg';
-import smallCuteCatsImg from './assets/img/smallcutecats.svg';
+import celeste from './assets/imgs/celeste2.jpg';
+import stardewValley from './assets/imgs/stardew-valley.jpg';
+import limbo from './assets/imgs/limbo-game.png';
+import wizardOfLegend from './assets/imgs/wizard-of-legend.webp';
+import zulf from './assets/imgs/zulf.png';
 
 export default function Sugestoes() {
     const usuariosSugeridos = [
-        { nickname: "bad.vibes.memes", imgPath: badVibesMemesImg, followingState: true },
-        { nickname: "chibirdart", imgPath: chibirdartImg, followingState: true },
-        { nickname: "razoesparaacreditar", imgPath: razoesParaAcreditarImg, followingState: false },
-        { nickname: "adorable_animals", imgPath: adorableAnimalsImg, followingState: true },
-        { nickname: "smallcutecats", imgPath: smallCuteCatsImg, followingState: true }
+        { nickname: "celeste", imgPath: celeste, followingState: true },
+        { nickname: "stardew-valley", imgPath: stardewValley, followingState: true },
+        { nickname: "limbo", imgPath: limbo, followingState: false },
+        { nickname: "wizard-of-legend", imgPath: wizardOfLegend, followingState: true },
+        { nickname: "zulf", imgPath: zulf, followingState: false }
     ]
     return (
         <SugestoesBox>

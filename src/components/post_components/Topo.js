@@ -6,7 +6,7 @@ export default function PostTopo(props) {
         <Topo>
             <Usuario>
                 <img alt="" src={userImg} />
-                    {username}
+                {username}
             </Usuario>
             <div className="acoes"><ion-icon name="ellipsis-horizontal"></ion-icon></div>
         </Topo>
@@ -37,4 +37,7 @@ const Usuario = styled.div`
     align-items: center;
     cursor: pointer;
     box-sizing: border-box;
+    img {
+        border-radius: 16px;
+    }
 `;

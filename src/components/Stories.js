@@ -1,25 +1,25 @@
 import styled from 'styled-components';
 
 import storyBackgroundImg from './assets/img/story-circle.svg';
-import nineGagImg from './assets/img/9gag.svg';
-import meowedImg from './assets/img/meowed.svg';
-import barkedImg from './assets/img/barked.svg';
-import nathanwpylestrangeplanetImg from './assets/img/nathanwpylestrangeplanet.svg';
-import wawacomicsImg from './assets/img/wawawicomics.svg';
-import respondeaiImg from './assets/img/respondeai.svg';
-import filomodernaImg from './assets/img/filomoderna.svg';
-import memeriagourmetImg from './assets/img/memeriagourmet.svg';
+import teamCherry from './assets/imgs/team-cherry.png';
+import supergiant from './assets/imgs/supergiant.jpg';
+import jonathanBlow from './assets/imgs/jonathan-blow.jpg';
+import playdead from './assets/imgs/playdead.jpg';
+import tobyfox from './assets/imgs/toby-fox.jpg';
+import reLogic from './assets/imgs/re-logic.png';
+import oneshot from './assets/imgs/oneshot.jpg';
+import compulsion from './assets/imgs/compulsion-games.jpg';
 
 export default function Stories() {
     const stories = [
-        { img: nineGagImg, user: "9gag" },
-        { img: meowedImg, user: "meowed" },
-        { img: barkedImg, user: "barked" },
-        { img: nathanwpylestrangeplanetImg, user: "nathanwpylestrangeplanet" },
-        { img: wawacomicsImg, user: "wawawicomics" },
-        { img: respondeaiImg, user: "respondeai" },
-        { img: filomodernaImg, user: "filomoderna" },
-        { img: memeriagourmetImg, user: "memeriagourmet" }
+        { img: teamCherry, user: "team-cherry" },
+        { img: supergiant, user: "supergiant" },
+        { img: jonathanBlow, user: "jonathan-blow" },
+        { img: playdead, user: "playdead" },
+        { img: tobyfox, user: "tobyfox" },
+        { img: reLogic, user: "re-logic" },
+        { img: oneshot, user: "oneshot" },
+        { img: compulsion, user: "compulsion" }
     ]
     return (
         <StoriesBox>

@@ -34,5 +34,6 @@ const Texto = styled.div`
     strong {
         font-weight: 500;
         color: #262626;
+        margin-bottom: 4px;
     }
 `;

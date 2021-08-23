@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default function UsuarioSugerido(props) {
-    const { nickname, imgPath, followingState} = props;
+    const { nickname, imgPath, followingState } = props;
     return (
         <UsuarioBox>
             <img alt="" src={imgPath} />
@@ -39,5 +39,6 @@ const Texto = styled.div`
     div:last-child {
         color: #8E8E8E;
         font-weight: 400;
+        margin-top: 4px;
     }
 `;

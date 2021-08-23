@@ -14,7 +14,7 @@ export default function PostFundo(props) {
             </div>
             <Curtidas>
                 <img alt="" src={curtidaImg} />
-                <div className="texto">Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong></div>
+                <div className="texto">Curtido por <strong>bob</strong> e <strong>outras 101.523 pessoas</strong></div>
             </Curtidas>
         </Fundo>
     )
@@ -48,5 +48,6 @@ const Curtidas = styled.div`
         width: 20px;
         height: 20px;
         margin-right: 10px;
+        border-radius: 16px;
     }
 `;
